@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/sortable.esm.js"></script>
+
+    <link rel="stylesheet" href="/build/sortable.css" />
+  </head>
+  <body>
+    <style>
+      .wrapper {
+        display: flex;
+        gap: 16px;
+      }
+    </style>
+    <div class="wrapper">
+      <drag-and-drop-container container-title="Backlog" group="kanban">
+        <draggable-item task-title="Edit tutorial video" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example0.svg"></draggable-item>
+        <draggable-item task-title="Publish video on Youtube" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example1.svg"></draggable-item>
+      </drag-and-drop-container>
+      <drag-and-drop-container container-title="In Progress" group="kanban">
+        <draggable-item task-title="Film tutorial video" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example2.svg"></draggable-item>
+        <draggable-item task-title="Push code to Github" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example3.svg"></draggable-item>
+      </drag-and-drop-container>
+      <drag-and-drop-container container-title="Done" group="kanban">
+        <draggable-item task-title="Create code demo" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example4.svg"></draggable-item>
+        <draggable-item task-title="Write video script" due-date="12/25/21" assignee-avatar="https://avatars.dicebear.com/api/micah/example5.svg"></draggable-item>
+      </drag-and-drop-container>
+    </div>
+  </body>
+</html>
